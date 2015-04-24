@@ -14,10 +14,11 @@ The RespondJsEvents plugin polls a page for changes applied by Respond.js and th
 Usage Instructions
 ======
 
-1. Include the RespondJsEvents plugin by adding the following to the head of you page:
+1. Include the RespondJsEvents plugin and CSS by adding the following to the head of you page:
 
 <pre>
     &lt;script type="text/javascript" src="../path/to/jquery-respondjsevents.js"&gt;
+    &lt;link type="text/css" rel="stylesheet" href="../path/to/jquery-respondjsevents.css"&gt;
 </pre>
 
 2. Next you need to specify your supported view modes, these relate directly to your CSS3 media queries. You do this by adding some markup to the end of your page just before the closing blody tag. For example if you have the following CSS:
@@ -36,7 +37,7 @@ Usage Instructions
     }
 </pre>
 
-...then you have three supported view modes: mmobile, tablet & desktop so you would add the following markup to you page:
+...then you have three supported view modes: mobile, tablet & desktop so you would add the following markup to you page:
 
 <pre>
     &lt;div id="respond-js-events"&gt;
@@ -45,3 +46,5 @@ Usage Instructions
         &lt;div class="respond-js-view-mode" data-view-mode="desktop"&gt;&lt;/div&gt;
     &lt;/div>
 </pre>
+
+3. Finally you would need to add the following CSS
