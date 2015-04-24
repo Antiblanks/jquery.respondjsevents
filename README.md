@@ -33,9 +33,9 @@ Usage Instructions
 Than you have three supported view modes: mmobile, tablet & desktop so you would add the following markup to you page:
 
 <pre>
-    <div id="respond-js-events">
-        <div class="respond-js-view-mode" data-view-mode="mobile"></div>
-        <div class="respond-js-view-mode" data-view-mode="tablet"></div>
-        <div class="respond-js-view-mode" data-view-mode="desktop"></div>
-    </div>
+    &lt;div id="respond-js-events"&gt;
+        &lt;div class="respond-js-view-mode" data-view-mode="mobile"&gt;&lt;/div&gt;
+        &lt;div class="respond-js-view-mode" data-view-mode="tablet"&gt;&lt;/div&gt;
+        &lt;div class="respond-js-view-mode" data-view-mode="desktop"&gt;&lt;/div&gt;
+    &lt;/div>
 </pre>
