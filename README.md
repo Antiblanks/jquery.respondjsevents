@@ -13,3 +13,19 @@ The RespondJsEvents plugin polls a page for changes applied by Respond.js and th
 
 Usage Instructions
 ======
+
+1. You need to specify your supported view modes, these relate directly to your CSS3 media queries. For example if you have the following CSS:
+
+<pre>
+    @media screen and (min-width: 1px){
+        ...mobile styles go here
+    }
+    
+    @media screen and (min-width: 481px){
+        ...tablet styles go here
+    }
+    
+    @media screen and (min-width: 1025px){
+        ...desktop styles go here
+    }
+</pre>
