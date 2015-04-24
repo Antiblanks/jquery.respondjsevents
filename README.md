@@ -14,7 +14,7 @@ The RespondJsEvents plugin polls a page for changes applied by Respond.js and th
 Usage Instructions
 ======
 
-1. You need to specify your supported view modes, these relate directly to your CSS3 media queries. For example if you have the following CSS:
+1. You need to specify your supported view modes, these relate directly to your CSS3 media queries. You do this by adding some markup to the end of your page just before the closing blody tag. For example if you have the following CSS:
 
 <pre>
     @media screen and (min-width: 1px){
@@ -28,4 +28,14 @@ Usage Instructions
     @media screen and (min-width: 1025px){
         ...desktop styles go here
     }
+</pre>
+
+Than you have three supported view modes: mmobile, tablet & desktop so you would add the following markup to you page:
+
+<pre>
+    <div id="respond-js-events">
+        <div class="respond-js-view-mode" data-view-mode="mobile"></div>
+        <div class="respond-js-view-mode" data-view-mode="tablet"></div>
+        <div class="respond-js-view-mode" data-view-mode="desktop"></div>
+    </div>
 </pre>
