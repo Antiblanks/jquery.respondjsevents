@@ -47,4 +47,14 @@ Usage Instructions
     &lt;/div>
 </pre>
 
-3. Finally you would need to add the following CSS
+3. Next you will need to edit the jquery-respondjsevents.css file to make RespondJsEvents CSS3 media queries match your existing CSS3 media queries. There is more info on this inside the jquery-respondjsevents.css file.
+
+4. Finally you will need to listen to the event that the RespondJsEvents plugin dispatches and do whatever it is you want to do once the styles have been applied, do this by adding this line to your Javascript:
+
+<pre>
+    $("#respond-js-events").on("respondJsEvents.onRespondJsUpdateComplete", function() {
+        ...do whatever it is you want to do
+    });
+</pre>
+
+5. And thats it, now when Respond.js applies the styles from the relevant media query the associated .respond-js-view-mode tag will be shown and the plugin will dispatch an event. 
