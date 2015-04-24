@@ -14,7 +14,13 @@ The RespondJsEvents plugin polls a page for changes applied by Respond.js and th
 Usage Instructions
 ======
 
-1. You need to specify your supported view modes, these relate directly to your CSS3 media queries. You do this by adding some markup to the end of your page just before the closing blody tag. For example if you have the following CSS:
+1. Include the RespondJsEvents plugin by adding the following to the head of you page:
+
+<pre>
+    &lt;script type="text/javascript" src="../path/to/jquery-respondjsevents.js"&gt;
+</pre>
+
+2. You need to specify your supported view modes, these relate directly to your CSS3 media queries. You do this by adding some markup to the end of your page just before the closing blody tag. For example if you have the following CSS:
 
 <pre>
     @media screen and (min-width: 1px){
