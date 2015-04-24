@@ -9,5 +9,7 @@ When using the plugin Respond.js (https://github.com/scottjehl/Respond) to apply
 How does it work?
 ======
 
+The RespondJsEvents plugin polls a page for changes applied by Respond.js and then dispatches an event which you can listen for and act accordingly.
+
 Usage Instructions
 ======
