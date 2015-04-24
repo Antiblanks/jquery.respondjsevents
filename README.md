@@ -20,7 +20,7 @@ Usage Instructions
     &lt;script type="text/javascript" src="../path/to/jquery-respondjsevents.js"&gt;
 </pre>
 
-2. You need to specify your supported view modes, these relate directly to your CSS3 media queries. You do this by adding some markup to the end of your page just before the closing blody tag. For example if you have the following CSS:
+2. Next you need to specify your supported view modes, these relate directly to your CSS3 media queries. You do this by adding some markup to the end of your page just before the closing blody tag. For example if you have the following CSS:
 
 <pre>
     @media screen and (min-width: 1px){
@@ -36,7 +36,7 @@ Usage Instructions
     }
 </pre>
 
-Than you have three supported view modes: mmobile, tablet & desktop so you would add the following markup to you page:
+...then you have three supported view modes: mmobile, tablet & desktop so you would add the following markup to you page:
 
 <pre>
     &lt;div id="respond-js-events"&gt;
