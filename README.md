@@ -9,7 +9,7 @@ When using the plugin Respond.js (https://github.com/scottjehl/Respond) to apply
 How does it work?
 ======
 
-The RespondJsEvents plugin polls a page for changes applied by Respond.js and then dispatches an event which you can listen for and act accordingly.
+The RespondJsEvents plugin polls a page for changes applied by Respond.js and then dispatches an event which you can listen for and act accordingly. 'Polling' sounds expensive but RespondJsEvents does not put unnecessary strain on the browser and you can configure the polling by adjusting the pollingIterationsMax options property in the plugin options. Note: The plugin will poll every 250 millaseconds and the default pollingIterationsMax value is 20 which is a 5 second poll duration, I would advise not going much lower than this as you must allow Respond.js enough time to load your stylesheet and apply your styles. 
 
 Usage Instructions
 ======
