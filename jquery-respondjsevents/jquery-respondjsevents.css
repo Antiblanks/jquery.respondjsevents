@@ -1,0 +1,78 @@
+/**
+ * respondJsEvents 0.0.1 - jQuery Plugin
+ * http://www.antiblanks.com/
+ * Copyright (c) 2014 Daniel Ivanovic
+ * Licensed under MIT and GPL
+ * Date: Fri, May 24 2015 15:58:56 -0800
+ */
+
+/**
+ * This file assumes you have three supported view modes: mobile, tablet and desktop and that your break points are mobile:1px-480px, tablet:481px-1024px, desktop:1025px-infinity
+ * You will need to edit this file and change these break points to marry the CSS3 media queries with your own so that they match.
+ * For each view mode you support add another media query, i.e; If you support a view mode in between tablet and desktop then you would add something like:
+
+	@media screen and (min-width: 727px) {
+		#respond-js-events .respond-js-view-mode {
+			display: none;
+		}
+
+		#respond-js-events .respond-js-view-mode[data-view-mode='tablet-2'] {
+			display: block;
+		}
+	}
+
+ * Then add the new view mode to your markup, for the above example you would add:
+
+ 	<div class="respond-js-view-mode" data-view-mode="tablet-2"></div>
+
+ * So you would have:
+
+ 	<div id="respond-js-events">
+		<div class="respond-js-view-mode" data-view-mode="mobile"></div>
+		<div class="respond-js-view-mode" data-view-mode="tablet"></div>
+		<div class="respond-js-view-mode" data-view-mode="tablet-2"></div>
+		<div class="respond-js-view-mode" data-view-mode="desktop"></div>
+	</div>
+
+ * 
+ * You can add as many view modes as you need to marry with your existing CSS3 media queries.
+ *
+ * IMPORTANT: 
+ *
+ * The reason you need these to match your existing CSS3 media queries is that when Respond.js applies the queries for each view mode your custom styles 
+ * will be applied and the correct view mode tag will also be displayed. This is how the plugin can tell that the view mode has changed.
+ *
+ */
+#respond-js-events .respond-js-view-mode {
+	display: none;
+}
+
+@media screen and (min-width: 1px) {
+	#respond-js-events .respond-js-view-mode {
+		display: none;
+	}
+
+	#respond-js-events .respond-js-view-mode[data-view-mode='mobile'] {
+		display: block;
+	}
+}
+
+@media screen and (min-width: 481px) {
+	#respond-js-events .respond-js-view-mode {
+		display: none;
+	}
+
+	#respond-js-events .respond-js-view-mode[data-view-mode='tablet'] {
+		display: block;
+	}
+}
+
+@media screen and (min-width: 1025px) {
+	#respond-js-events .respond-js-view-mode {
+		display: none;
+	}
+
+	#respond-js-events .respond-js-view-mode[data-view-mode='desktop'] {
+		display: block;
+	}
+}
