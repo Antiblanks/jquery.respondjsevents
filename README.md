@@ -14,14 +14,14 @@ The RespondJsEvents plugin polls a page for changes applied by Respond.js and th
 Usage Instructions
 ======
 
-1. Include the RespondJsEvents plugin and CSS by adding the following to the head of you page:
+Include the RespondJsEvents plugin and CSS by adding the following to the head of you page:
 
 <pre>
     &lt;script type="text/javascript" src="../path/to/jquery-respondjsevents.js"&gt;
     &lt;link type="text/css" rel="stylesheet" href="../path/to/jquery-respondjsevents.css"&gt;
 </pre>
 
-2. Next you need to specify your supported view modes, these relate directly to your CSS3 media queries. You do this by adding some markup to the end of your page just before the closing blody tag. For example if you have the following CSS:
+Next you need to specify your supported view modes, these relate directly to your CSS3 media queries. You do this by adding some markup to the end of your page just before the closing blody tag. For example if you have the following CSS:
 
 <pre>
     @media screen and (min-width: 1px){
@@ -47,9 +47,9 @@ Usage Instructions
     &lt;/div>
 </pre>
 
-3. Next you will need to edit the jquery-respondjsevents.css file to make RespondJsEvents CSS3 media queries match your existing CSS3 media queries. There is more info on this inside the jquery-respondjsevents.css file.
+Next you will need to edit the jquery-respondjsevents.css file to make RespondJsEvents CSS3 media queries match your existing CSS3 media queries. There is more info on this inside the jquery-respondjsevents.css file.
 
-4. Finally you will need to listen to the event that the RespondJsEvents plugin dispatches and do whatever it is you want to do once the styles have been applied, do this by adding this line to your Javascript:
+Finally you will need to listen to the event that the RespondJsEvents plugin dispatches and do whatever it is you want to do once the styles have been applied, do this by adding this line to your Javascript:
 
 <pre>
     $("#respond-js-events").on("respondJsEvents.onRespondJsUpdateComplete", function() {
@@ -57,4 +57,4 @@ Usage Instructions
     });
 </pre>
 
-5. And thats it, now when Respond.js applies the styles from the relevant media query the associated .respond-js-view-mode tag will be shown and the plugin will dispatch an event. 
+And thats it, now when Respond.js applies the styles from the relevant media query the associated .respond-js-view-mode tag will be shown and the plugin will dispatch an event. 
