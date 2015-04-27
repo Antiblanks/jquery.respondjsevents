@@ -52,9 +52,9 @@ Next you will need to edit the jquery-respondjsevents.css file to make RespondJs
 Finally you will need to listen to the event that the RespondJsEvents plugin dispatches and do whatever it is you want to do once the styles have been applied, do this by adding this line to your Javascript:
 
 <pre>
-    $("#respond-js-events").on("respondJsEvents.onRespondJsUpdateComplete", function(evt) {
+    $("#respond-js-events").on("respondJsEvents.onRespondJsUpdateComplete", function(evt, data) {
         ...do whatever it is you want to do
-        ...the displayed view mode can be accessed via evt.data.currentViewMode
+        ...the displayed view mode can be accessed via data.currentViewMode
     });
 </pre>
 
